@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Trabajo</title>
+</head>
+<body>
+
+    <h1>Crear Nuevo Trabajo</h1>
+
+    <form id="job-form">
+
+        <div>
+            <label>Título:</label><br>
+            <input type="text" id="titulo" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Descripción:</label><br>
+            <textarea id="descripcion"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Pago:</label><br>
+            <input type="number" id="pago" step="0.01" min="0" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Ubicación:</label><br>
+            <input type="text" id="ubicacion" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Fecha del trabajo:</label><br>
+            <input type="date" id="fecha" required>
+        </div>
+
+        <br>
+
+        <button type="submit">Crear Trabajo</button>
+
+    </form>
+
+    <br>
+
+    <button onclick="window.location.href='mis-jobs.html'">
+        Volver a mis trabajos
+    </button>
+
+    <button onclick="logout()">Cerrar sesión</button>
+
+    <script src="js/crear-job.js" defer></script>
+
+</body>
+</html>

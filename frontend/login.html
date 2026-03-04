@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Cachuelos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-btn {
+            margin-top: 0.8rem;
+            background-color: #6b7280;
+        }
+
+        .register-btn:hover {
+            background-color: #4b5563;
+        }
+
+        .separator {
+            text-align: center;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .login-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 320px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.7rem;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .success {
+            color: green;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+
+        <form id="login-form">
+            <input 
+                type="email" 
+                id="email" 
+                placeholder="Correo electrónico"
+                required
+            >
+
+            <input 
+                type="password" 
+                id="password" 
+                placeholder="Contraseña"
+                required
+            >
+
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <div id="message"></div>
+
+        <div class="separator">¿No tienes cuenta?</div>
+
+        <button 
+            type="button"
+            class="register-btn"
+            onclick="window.location.href='register.html'">
+            Crear cuenta
+        </button>
+    </div>
+    
+    <!-- Aquí conectaremos JS -->
+    <script src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+</head>
+<body>
+
+    <h2>Crear cuenta</h2>
+
+    <form id="register-form">
+
+        <div>
+            <label>Nombre:</label><br>
+            <input type="text" id="nombre" required>
+        </div>
+
+        <div>
+            <label>Nacionalidad:</label><br>
+            <input type="text" id="nacionalidad" required>
+        </div>
+
+        <div>
+            <label>Email:</label><br>
+            <input type="email" id="email" required>
+        </div>
+
+        <div>
+            <label>Password:</label><br>
+            <input type="password" id="password" required>
+        </div>
+
+        <div>
+            <label>Rol:</label><br>
+            <select id="rol" required>
+                <option value="">Seleccionar rol</option>
+                <option value="trabajador">Trabajador</option>
+                <option value="empleador">Empleador</option>
+            </select>
+        </div>
+
+        <br>
+
+        <button type="submit">Registrarse</button>
+
+    </form>
+
+    <div id="message" style="margin-top:15px;"></div>
+
+    <hr>
+
+    <p>¿Ya tienes cuenta?</p>
+    <button onclick="window.location.href='login.html'">
+        Ir a Login
+    </button>
+
+    <script src="register.js"></script>
+
+</body>
+</html>
